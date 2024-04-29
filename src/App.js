@@ -1,22 +1,31 @@
 import './App.css';
-import {Routes, Route} from 'react-router-dom';
-import Main from './components/Main';
-import About from './components/About';
-import News from './components/News';
+import React from 'react';
+import Navbar from './components/inc/Navbar';
+import Main from './components/pages/Main';
+import News from './components/pages/News';
+import About from './components/pages/About';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
 
-      <Routes>
-
-        <Route path="" element={<Main/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/news" element={<News/>}/>
-
-      </Routes>
+    <Router>
+      <div className='App'>
+        <Navbar /> 
+          <div className="content">
+            <Routes>
+              <Route path='' element={<Main/>} />
+              <Route path='/news' element={<News/>} />
+              <Route path='/about' element={<About/>} /> 
+            </Routes>
+          </div>   
+      </div> 
+    </Router>
       
-    </div>
+
+
   );
 }
 
