@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.rtl.min.css';
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow " >
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-black shadow " >
+        <div class="container-fluid bg-black">
             <Link to="/" class="navbar-brand ms-5" >شيـــــــــك</Link>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
                 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <Link to="/" class="nav-link active mx-4">الرئيسيـــــــــة</Link>
